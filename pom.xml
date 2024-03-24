@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.culture.ai</groupId>
+  <artifactId>chatbot</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>chatbot</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+
+  <!-- Your project details like groupId, artifactId, and version -->
+
+  <dependencies>
+    <!-- DJL API dependency -->
+    <dependency>
+      <groupId>ai.djl</groupId>
+      <artifactId>api</artifactId>
+      <version>0.26.0</version>
+    </dependency>
+
+    <!-- DJL Hugging Face Tokenizers dependency -->
+    <dependency>
+      <groupId>ai.djl.huggingface</groupId>
+      <artifactId>tokenizers</artifactId>
+      <version>0.26.0</version>
+    </dependency>
+
+
+    <!-- DJL Llama Engine dependency -->
+    <dependency>
+      <groupId>ai.djl.llama</groupId>
+      <artifactId>llama</artifactId>
+      <version>0.26.0</version>
+    </dependency>
+
+    <!-- DJL PyTorch Engine dependency -->
+    <dependency>
+      <groupId>ai.djl.pytorch</groupId>
+      <artifactId>pytorch-engine</artifactId>
+      <version>0.26.0</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <!-- SLF4J Simple Logger dependency -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.36</version>
+    </dependency>
+
+
+  </dependencies>
+
+
+</project>
